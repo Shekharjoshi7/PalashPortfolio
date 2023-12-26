@@ -1,11 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Exo+2&family=Philosopher&display=swap');
+
 
 
 *{
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Philosopher', sans-serif;
     color: white;
     
 }
@@ -56,6 +58,7 @@
     background-color: black;
 }
 .right h1{
+    font-family: 'Exo 2', sans-serif;
     font-size: 3rem;
     margin: 20px 0px;
 }
@@ -82,8 +85,12 @@
 .BtnBox{
     margin-top: 25px;
 }
+.hd{
+    visibility: hidden;
+}
 .btn{
     /* width: 10vw; */
+    visibility: visible;
     padding: 0px 20px;
     background-color: rgb(0, 171, 240);
     height: 6vh;
@@ -92,6 +99,7 @@
     border-radius: 100px;
     margin: 0px 15px;
     font-size: 1rem;
+    /* transition: 1s ease-in; */
 }
 .btn:hover
 {
@@ -115,7 +123,7 @@
 #About{
     position:fixed;
     overflow: scroll;
-    background-color: black;
+    background-color:black;
     top: 0;
     right: -100%;
     z-index: 1;
@@ -127,9 +135,16 @@
 }
 .AboutContainer{
     width: 75vw;
-    height: 100vh;
+    height:90vh;
+    /* background-color: white; */
     
 }
+.About2{
+    width: 70vw;
+    height: 100vh;
+
+}
+
 .Box{
     display: flex;
 
