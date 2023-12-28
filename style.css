@@ -9,16 +9,13 @@
     scroll-behavior: smooth;
     font-family: 'Philosopher', sans-serif;
     color: white;
-    
+}
+body{
+    background-color: black;
 }
 
 
-.container{
-    display: flex;
-    /* align-items: center; */
-    /* width: 100vw; */
-    height: 100%;
-}
+
 .left{
     position:fixed;
     left: 0;
@@ -35,21 +32,23 @@
 }
 
 .Navbar ul{
-    margin: 3rem 0px;
+    margin: 70px 0px;
     list-style: none;
     display: flex;
     align-items: center;
+    /* justify-content: space-around; */
     flex-direction: column;
     
 
 }
 .Navbar ul li{
-    margin: 2rem 0px;
+    margin: 40px 0px;
 }
 
 .Navbar ul li a{
     color: white;
     text-decoration: none;
+    font-size: 1.3rem;
 }
 .right{
     position:fixed;
@@ -63,21 +62,27 @@
     margin: 20px 0px;
 }
 .right p{
-    margin: 70px 0px;
+    margin: 30px 0px;
     font-size: 1.3rem;
 }
 .Content{
     width: 79vw;
 }
 #Home{
+    position: fixed;
+    top: 0;
+    right: -100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: black;
+    width: 80vw;
     height: 100vh;
+    transition: 1s ease-in;
 }
 
 
-.home{
+.HomeContainer{
     width:50vw;
     margin: auto;
     color: white;
@@ -115,35 +120,27 @@
     height: 40vh;
 }
 
-.Sections{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
+
 #About{
     position:fixed;
     overflow: scroll;
     background-color:black;
     top: 0;
     right: -100%;
-    z-index: 1;
     padding: 40px;
     transition: 1s ease-in;
 }
-#About.Show{
-    right:0;
-}
+
 .AboutContainer{
     width: 75vw;
     height:90vh;
     /* background-color: white; */
     
 }
-.About2{
-    width: 70vw;
-    height: 100vh;
-
+.SecondaryH{
+    margin-top: 50px;
 }
+
 
 .Box{
     display: flex;
@@ -168,16 +165,93 @@ hr{
     font-size: 1.1rem;
     margin: 2px 8px;
 }
+.About2{
+    width: 70vw;
+    height: 100vh;
+    display: flex;
+
+}
+.boxes{
+    margin:35px 15px;
+    padding: 25px;
+    width: 35vw;
+    border: 2px solid white;
+}
 .progress{
     width: 23vw;
 }
 .h{
     visibility: hidden;
 }
+#Project{
+    position: fixed;
+    right: -100%;
+    top: 0;
+    height: 100vh;
+    transition: 1s ease-in;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 
 
 .ProjectContainer{
-    position:fixed;
-    width: 50vw;
+    width: 80vw;
     height: 90vh;
+}
+#Certificate{
+    position: fixed;
+    right: -100%;
+    top: 0;
+    height: 100vh;
+    transition: 1s ease-in;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.CertificateContainer{
+    width: 80vw;
+    height: 90vh;
+}
+#Contact{
+    position: fixed;
+    right: -100%;
+    top: 0;
+    height: 100vh;
+    transition: 1s ease-in;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.ContactContainer{
+    width: 80vw;
+    height: 90vh;
+}
+
+
+
+/* Animation */
+#Home.Show{
+    right:0;
+    z-index: 1;
+}
+#About.Show{
+    right:0;
+    z-index: 1;
+}
+#Project.Show{
+    right:0;
+    z-index: 1;
+}
+#Certificate.Show{
+    right:0;
+    z-index: 1;
+}
+#Contact.Show{
+    right:0;
+    z-index: 1;
 }
