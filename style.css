@@ -87,6 +87,7 @@ body{
     margin: auto;
     color: white;
 }
+
 .BtnBox{
     margin-top: 25px;
 }
@@ -115,15 +116,17 @@ body{
 
 .Profile{
     border-radius: 99px;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     width: 20vw;
     height: 40vh;
+    background: url('palash.jpeg') no-repeat center ;
+    background-size: cover;
 }
 
 
 #About{
     position:fixed;
-    overflow: scroll;
+    overflow-y: scroll;
     background-color:black;
     top: 0;
     right: -100%;
@@ -201,7 +204,8 @@ hr{
 }
 #Certificate{
     position: fixed;
-    right: -100%;
+    overflow-y: scroll;
+    right: 0%;
     top: 0;
     height: 100vh;
     transition: 1s ease-in;
@@ -212,8 +216,25 @@ hr{
 
 
 .CertificateContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    align-items: center;
     width: 80vw;
-    height: 90vh;
+    /* height: 100vh; */
+
+}
+.grid{
+    width: 72vw;
+    /* height: 100vh; */
+    display: grid;
+    grid-template-columns: 35vw 35vw;
+    grid-gap: 1vw;
+}
+.Cards{
+    border: 2px solid white;
+    height: 50vh;
+
 }
 #Contact{
     position: fixed;
@@ -236,7 +257,7 @@ hr{
 
 /* Animation */
 #Home.Show{
-    right:0;
+    right:100%;
     z-index: 1;
 }
 #About.Show{
