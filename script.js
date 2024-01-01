@@ -77,4 +77,4 @@ var typed = new Typed('#element', {
   let Touch=document.getElementById('touch');
   setTimeout(() => {
     Touch.classList.add('btn')
-  }, "7700");
+  }, "10400");

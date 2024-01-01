@@ -29,6 +29,7 @@ body{
 .TextCenter{
     /* text-align: center; */
     color:  white;
+    text-align: justify;
 }
 
 .Navbar ul{
@@ -151,7 +152,7 @@ body{
 }
 .item{
     width:25vw;
-    height: 40vh;
+    height: 50vh;
     /* border: 2px solid wheat; */
     margin: 0px 15px;
     display: flex;
@@ -170,15 +171,35 @@ hr{
 }
 .About2{
     width: 70vw;
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
 
 }
 .boxes{
     margin:35px 15px;
     padding: 25px;
-    width: 35vw;
-    border: 2px solid white;
+    width: 30vw;
+    /* display: flex; */
+    /* border: 2px solid white; */
+}
+.School{
+    margin: 55px 0px;
+}
+.School span{
+    color: grey;
+}
+.IntBox{
+    display: flex;
+    flex-direction: column;
+}
+
+.Interest{
+    padding: 15px 0px;
+    border-radius:10px ;
+    background-color: rgb(112, 112, 112 ,0.5);
+    width: 8vw;
+    margin: 5px 0px;
+    text-align: center;
 }
 .progress{
     width: 23vw;
@@ -277,6 +298,7 @@ hr{
     top: 0;
     height: 100vh;
     transition: 1s ease-in;
+    background-color: black;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -284,10 +306,59 @@ hr{
 
 
 .ContactContainer{
-    width: 79vw;
     height: 90vh;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    align-items: center;
+    width: 79vw;
+}
+.FormBox{
+    display: flex;
+
+}
+.Links{
+    margin: 20px 0px;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+
+}
+.LinkBox{
+    height: 15vh;
+    width: 18vw;
+    margin: 1px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  rgb(128, 128, 128,0.1);
+    border-radius: 15px;
 }
 
+.LinkBox a{
+    color: white;
+    text-decoration: none;
+}
+
+.ContactBox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.ContactBox textarea{
+    height: 20vh;
+
+}
+.form{
+    height: 3vh;
+    width: 40vw;
+    color: black;
+    margin: 2%;  
+    padding: 15px;
+    border-radius: 50px;
+}
 
 
 /* Animation */
