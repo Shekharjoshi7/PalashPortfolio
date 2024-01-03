@@ -15,53 +15,56 @@ const liCertificate = document.getElementById('liCertificate')
 const liContact = document.getElementById('liContact')
 const touch = document.getElementById('touch')
 
+const navlink = document.querySelectorAll('.NItem')
+navlink.forEach(n=>{
+    n.addEventListener('click',()=>{
+        document.querySelector('.active').classList.remove('active')
+        document.querySelector('.Show').classList.remove('Show')
+        n.classList.add('active')
+        // n.classList.add('active')
+    })
+})
+
 liHome.addEventListener('click',()=>{
     Home.classList.add('Show')
-    About.classList.remove('Show')
-    Project.classList.remove('Show')
-    Certificate.classList.remove('Show')
-    Contact.classList.remove('Show')
+   
     
 
 })
 liAbout.addEventListener('click',()=>{
     About.classList.add('Show')
-    Home.classList.remove('Show')
-    Project.classList.remove('Show')
-    Certificate.classList.remove('Show')
-    Contact.classList.remove('Show')
+   
 
 })
 liProject.addEventListener('click',()=>{
     Project.classList.add('Show')
-    Home.classList.remove('Show')
-    About.classList.remove('Show')
-    Certificate.classList.remove('Show')
-    Contact.classList.remove('Show')
+  
 
 })
 liCertificate.addEventListener('click',()=>{
+    
     Certificate.classList.add('Show')
-    Home.classList.remove('Show')
-    About.classList.remove('Show')
-    Project.classList.remove('Show')
-    Contact.classList.remove('Show')
+
 
 })
 liContact.addEventListener('click',()=>{
     Contact.classList.add('Show')
+
+
+})
+touch.addEventListener('click',()=>{
+    liContact.classList.add('active')
+    Contact.classList.add('Show')
+    
     Home.classList.remove('Show')
     About.classList.remove('Show')
     Project.classList.remove('Show')
     Certificate.classList.remove('Show')
 
-})
-touch.addEventListener('click',()=>{
-    Contact.classList.add('Show')
-    Home.classList.remove('Show')
-    About.classList.remove('Show')
-    Project.classList.remove('Show')
-    Certificate.classList.remove('Show')
+    liHome.classList.remove('active')
+    liAbout.classList.remove('active')
+    liProject.classList.remove('active')
+    liCertificate.classList.remove('active')
 
 })
 

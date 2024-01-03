@@ -44,12 +44,27 @@ body{
 }
 .Navbar ul li{
     margin: 40px 0px;
+    
 }
 
-.Navbar ul li a{
+.NItem{
+    height: 2vh;
+    /* width: 4vw; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
     text-decoration: none;
     font-size: 1.3rem;
+}
+
+a.active , a:hover{
+    /* background-color: #fff; */
+    text-decoration:underline  rgb(0, 171, 240); 
+    color:rgb(0, 171, 240) ;
+}
+.icon{
+    color: rgb(0, 171, 240);
 }
 .right{
     width: 80vw;
@@ -62,6 +77,7 @@ body{
 }
 .right p{
     margin: 30px 0px;
+    height: 15vh;
     font-size: 1.3rem;
 }
 .Content{
@@ -139,8 +155,10 @@ body{
 .AboutContainer{
     width: 75vw;
     height:90vh;
-    /* background-color: white; */
-    
+    /* background-color: white; */   
+}
+.AboutContainer h1{
+    font-size: 3rem;
 }
 .SecondaryH{
     margin-top: 50px;
@@ -230,7 +248,7 @@ hr{
     width: 79vw;
 }
 .ProjectContainer h1{
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 .PItems{
     margin: 30px 0px;
@@ -259,6 +277,9 @@ hr{
     width: 79vw;
     /* height: 100vh; */
 
+}
+.CertificateContainer h1{
+    font-size: 3rem;
 }
 .grid{
     width: 72vw;
@@ -320,14 +341,19 @@ hr{
 
 
 .ContactContainer{
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     padding: 20px 0;
     align-items: center;
     width: 79vw;
 }
+.ContactContainer h1{
+    font-size: 3rem;
+}
 .FormBox{
+    height: 80vh;
+    align-items: center;
     display: flex;
 
 }
@@ -356,6 +382,7 @@ hr{
 
 .ContactBox{
     width: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
