@@ -272,6 +272,10 @@ hr{
     width: 50vw;
     padding: 10px;
 }
+.PItems h3{
+    color:  rgb(0, 171, 240);
+    font-size: 1.8rem;
+}
 #Certificate{
     background-color: black;
     position: fixed;
@@ -342,8 +346,11 @@ hr{
     width: 36vw;
 }
 .info{
-    height: 10vh;
-    
+    height: 10vh;  
+}
+.info h3{
+    margin-top: 5px;
+    /* color:  rgb(0, 171, 240); */
 }
 #Contact{
     position: fixed;
