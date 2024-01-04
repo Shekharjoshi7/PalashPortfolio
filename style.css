@@ -89,7 +89,7 @@ a.active , a:hover{
     justify-content: space-between;
     align-items: center;
     background-color: black;
-    width: 80vw;
+    width: 79vw;
     height: 100vh;
     transition: 1s ease-in;
 }
@@ -155,8 +155,26 @@ a.active , a:hover{
     /* background-color: white; */   
 }
 .AboutContainer h1{
-    color: rgb(0, 171, 240);
     font-size: 3rem;
+}
+.AboutContainer h1::before{
+    content: "";
+    height: 4px;
+    width: 10vh;
+    background-color: rgb(0, 171, 240) ;
+    position: absolute;
+    top: 14%;
+    left: 2%;
+}
+.AboutContainer h1::after{
+    content: "";
+    height: 4px;
+    width: 6vh;
+    background-color: rgb(0, 171, 240) ;
+    position: absolute;
+    z-index: 2;
+    top: 16%;
+    left: 2%;
 }
 .SecondaryH{
     margin-top: 50px;
@@ -246,7 +264,7 @@ hr{
     width: 79vw;
 }
 .ProjectContainer h1{
-    color: rgb(0, 171, 240);
+    
     font-size: 3rem;
 }
 .PItems{
@@ -278,7 +296,7 @@ hr{
 
 }
 .CertificateContainer h1{
-    color: rgb(0, 171, 240);
+   
     font-size: 3rem;
 }
 .grid{
@@ -349,7 +367,7 @@ hr{
     width: 79vw;
 }
 .ContactContainer h1{
-    color: rgb(0, 171, 240);
+    
     font-size: 3rem;
 }
 .FormBox{
