@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/utlity.css">
 
 
 <body>
     <div>
         <div class="left">
-            <h1 class="TextCenter"><i>Palash</i></h1>
+            <h1 class=""><i>Palash</i></h1>
             <nav class="Navbar">
                 <ul>
                     <li>
@@ -54,11 +55,11 @@
         </div>
         <div class="right">
             <div class="Content">
-                <section id="Home" class="Show">
+                <section id="Home" class="Container Show">
                     <div class="HomeContainer">
-                        <h1><span style="color: rgb(0, 171, 240);font-family:  'Exo 2', sans-serif;">Palash</span>
+                        <h1 style="font-family:  'Exo 2', sans-serif;" class="Heading"><span style="color: rgb(0, 171, 240);font-family:  'Exo 2', sans-serif;">Palash</span>
                             Khandelwal</h1>
-                        <p class="TextCenter" id="element">
+                        <p class="para" id="element">
 
 
                         </p>
@@ -69,11 +70,11 @@
                     <div class="Profile "></div>
                 </section>
 
-                <section id="About">
-                    <div class="AboutContainer ">
-                        <h1 class="TextCenter">About me</h1>
-                        <h2 class="SecondaryH"> Hey I Am <span style="color: rgb(0, 171, 240);">Palash</span></h2>
-                        <p class="TextCenter"> An aspiring entrant into the dynamic IT industry. Fueled by curiosity, my
+                <section class="Container"id="About">
+                    <div class=" SContainer ">
+                        <h1 class="Heading ">About me</h1>
+                        <h2 class="SecondaryH" style="color: white;"> Hey I Am <span style="color: rgb(0, 171, 240);">Palash</span></h2>
+                        <p class="para " style="width: 75vw;"> An aspiring entrant into the dynamic IT industry. Fueled by curiosity, my
                             journey is guided by a commitment to continuous learning and positive influence. Eager to
                             infuse projects with a fresh perspective, I am driven to contribute meaningfully to the
                             evolving tech landscape. As a budding professional, my goal is to explore diverse
@@ -119,7 +120,7 @@
                                     <h3>Degree : </h3><span class="text"> M.C.A. </span>
                                 </div>
                                 <hr>
-                                <div class="BtnBox">
+                                <div id='hd'class="BtnBox">
                                     <button class="btn h">Download CV</button><button class="btn h">Hire Me</button>
                                 </div>
 
@@ -135,7 +136,7 @@
                                 </div>
                                 <div>
                                     <h3>Python</h3>
-                                    <progress class="progress" max="100" value="75"></progress>
+                                    <progress class="progress" max="100" value="60"></progress>
                                 </div>
                                 <div>
                                     <h3>HTML CSS JS</h3>
@@ -146,7 +147,7 @@
                         </div>
                         <div class="About2">
                             <div class="boxes">
-                                <h2 class="TextCenter">High School</h2>
+                                <h2 class="">High School</h2>
                                 <div>
 
                                     <div class="School">
@@ -172,7 +173,7 @@
                                         </span>
                                     </div>
                                 </div>
-                                <h2 class="TextCenter">Graduation</h2>
+                                <h2 class="">Graduation</h2>
                                 <div class="School">
                                     <span>
                                         2019-2022
@@ -198,7 +199,7 @@
                             </div>
 
                             <div class="boxes">
-                                <h2 class="TextCenter"> Work Experience</h2>
+                                <h2 class=""> Work Experience</h2>
                                 <div>
 
                                     <div class="School">
@@ -210,7 +211,7 @@
                                             Anwimac Technology, Udaipur
                                         </h3>
 
-                                        <p>
+                                        <p class="para">
                                             Worked as a FrontEnd intern working with the development team to gain
                                             hands-on experience in designing and implementing the user interface of a
                                             website
@@ -220,7 +221,7 @@
                                 </div>
                                 <div class=" IntBox">
 
-                                    <h2 class="TextCenter"> Interests</h2>
+                                    <h2 class=""> Interests</h2>
                                     <span class="Interest">
                                         Gaming
                                     </span>
@@ -243,12 +244,12 @@
             </div>
         </div>
         </section>
-        <section id="Project">
-            <div class="ProjectContainer">
-                <h1 class="TextCenter">Project</h1>
+        <section class="Container"id="Project">
+            <div class="SContainer">
+                <h1 class="Heading ">Project</h1>
                 <div class="PItems">
-                    <h3> Research Based Learning</h3>
-                    <p>Improve the quality of satellite images impacted by Gaussian noise and Impulse noise through
+                    <h3 class="SecondaryH"> Research Based Learning</h3>
+                    <p class="">Improve the quality of satellite images impacted by Gaussian noise and Impulse noise through
                         proposed image enhancement algorithms. Evaluate the effectiveness of the suggested algorithms in
                         enhancing the clarity and overall quality of the satellite imagery. Address challenges posed by
                         both Gaussian and Impulse noise to enhance the visual interpretation and analysis of satellite
@@ -260,7 +261,7 @@
 
                 </div>
                 <div class="PItems">
-                    <h3> Disease Prediction System using Random Forest</h3>
+                    <h3 class="SecondaryH"> Disease Prediction System using Random Forest</h3>
                     <p>When an issue occurs, people often want to look it up on the internet. Hospitals and physicians
                         have less access to the internet than the general public. When people are afflicted with an
                         illness, they do not have many options. As a result, this system can be beneficial to people.
@@ -271,7 +272,7 @@
 
                 </div>
                 <div class="PItems">
-                    <h3>Digit Recognition using Machine Learning</h3>
+                    <h3 class="SecondaryH">Digit Recognition using Machine Learning</h3>
                     <p>It involves training a model to recognize and classify handwritten or printed digits into their respective numerical representations (0
                         through 9).
                     </p>
@@ -281,7 +282,7 @@
 
                 </div>
                 <div class="PItems">
-                    <h3> Research Based Learning</h3>
+                    <h3  class="SecondaryH"> Research Based Learning</h3>
                     <p>Improve the quality of satellite images impacted by Gaussian noise and Impulse noise through
                         proposed image enhancement algorithms. Evaluate the effectiveness of the suggested algorithms in
                         enhancing the clarity and overall quality of the satellite imagery. Address challenges posed by
@@ -294,53 +295,41 @@
                 </div>
             </div>
         </section>
-        <section id="Certificate">
-            <div class="CertificateContainer">
-                <h1 class="TextCenter">Certificates</h1>
+        <section class="Container"id="Certificate">
+            <div class="SContainer">
+                <h1 class="Heading ">Certificates</h1>
                 <div class="grid">
                     <div class="Cards">
                         <div class="img">
                             <img src="Resources/java_basic.jpg" alt="">
                         </div>
-                        <div class="info">
-                            <h3>Java_Basic</h3>
-                        </div>
+                        
                     </div>
                     <div class="Cards">
                         <div class="img">
                             <img src="Resources/problem_solving_basic.jpg" alt="">
                         </div>
-                        <div class="info">
-                            <h3>Problem_Solving</h3>
-                        </div>
+                       
                     </div>
                     <div class="Cards">
                         <div class="img">
                             <img id="sp" src="Resources/MachineLearning.jpg" alt="">
                         </div>
-                        <div class="info">
-                            <h3>
-                                MachineLearning
-                            </h3>
-                        </div>
+                       
                     </div>
                     <div class="Cards">
                         <div class="img">
                             <img src="Resources/IBM PY0101EN.jpg" alt="">
                         </div>
-                        <div class="info">
-                            <h3>
-                                Python_Basic
-                            </h3>
-                        </div>
+                       
                     </div>
 
                 </div>
             </div>
         </section>
-        <section id="Contact">
-            <div class="ContactContainer">
-                <h1 class="TextCenter">Contact</h1>
+        <section class="Container"id="Contact">
+            <div class="SContainer">
+                <h1 class="Heading ">Contact</h1>
                 <div class="FormBox">
                     <div class="Links">
                         <div class="LinkBox">

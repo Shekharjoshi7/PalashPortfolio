@@ -1,5 +1,4 @@
 
-
 const Home = document.getElementById('Home')
 const About = document.getElementById('About')
 const Project = document.getElementById('Project')
@@ -15,13 +14,14 @@ const liCertificate = document.getElementById('liCertificate')
 const liContact = document.getElementById('liContact')
 const touch = document.getElementById('touch')
 
+
+
 const navlink = document.querySelectorAll('.NItem')
 navlink.forEach(n=>{
     n.addEventListener('click',()=>{
         document.querySelector('.active').classList.remove('active')
         document.querySelector('.Show').classList.remove('Show')
         n.classList.add('active')
-        // n.classList.add('active')
     })
 })
 
@@ -77,7 +77,7 @@ var typed = new Typed('#element', {
     loop:false,
     loopCount: Infinity
   });
-  let Touch=document.getElementById('touch');
+  
   setTimeout(() => {
-    Touch.classList.add('btn')
-  }, "10400");
+    touch.classList.add('btn')
+  }, "9000");
