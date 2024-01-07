@@ -446,6 +446,9 @@ hr {
     .School {
         margin: 25px 0px;
     }
+    .IntBox{
+        height: 40vh;
+    }
     .Interest {
         padding: 15px 0px;
         border-radius: 10px;
@@ -464,7 +467,7 @@ hr {
         grid-template-columns:90vw;
     }
     .Cards {
-        height: 35vh;
+        height: 40vh;
     }
     
     .img {
