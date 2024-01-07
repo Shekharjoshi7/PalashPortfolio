@@ -94,7 +94,7 @@ a:hover {
 .Profile {
     width: 20vw;
     height: 40vh;
-    background: url('Resources/BC.JPG') no-repeat center;
+    background: url('./Resources/BC.JPG') no-repeat center;
     background-size: cover;
 }
 
