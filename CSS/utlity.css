@@ -86,10 +86,12 @@
     }
 
     .Container {
+        margin-bottom: 10vh 0;
         top: unset;
         width: 100vw;
         height: 90vh;
         align-items: center;
+
     }
     .SContainer {
        
