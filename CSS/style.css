@@ -397,7 +397,7 @@ hr {
     #About h1::before {
         height: 3px;
         width: 17vw;
-        top: 5%;
+        top: 8%;
         left: 5%;
     
     }
@@ -405,7 +405,7 @@ hr {
     #About h1::after {
         height: 3px;
         width: 8vw;
-        top: 6%;
+        top: 9%;
         left: 5%;
     }
     .AbPara{
@@ -466,7 +466,7 @@ hr {
         grid-template-columns:90vw;
     }
     .Cards {
-        height:max-content;
+        height:30vh;
     }
     
     .img {
