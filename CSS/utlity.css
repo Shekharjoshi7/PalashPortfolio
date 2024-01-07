@@ -78,24 +78,25 @@
         margin: 0px;
         font-size: 1.2rem;
     }
-
+    
     .para {
         margin: 10px 0px;
         font-size: 1rem;
         height: auto;
     }
-
+    
     .Container {
         margin-bottom: 10vh 0;
         top: unset;
         width: 100vw;
         height: 90vh;
         align-items: center;
-
+        transition: 0.3s ease-in;
+        
     }
     .SContainer {
        
-        padding: 2px;
+        padding-bottom: 30px;
 
       
     }
