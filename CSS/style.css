@@ -26,7 +26,7 @@ body {
 
 /* Navbar <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
-.Navbar ul {
+.NavContainer {
     margin: 70px 0px;
     list-style: none;
     display: flex;
@@ -34,18 +34,16 @@ body {
     flex-direction: column;
 }
 
-.Navbar ul li {
+.NavContainer li {
     margin: 40px 0px;
 
 }
 
 .NItem {
     height: 2vh;
-    /* width: 4vw; */
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
     text-decoration: none;
     font-size: 1.3rem;
 }
@@ -53,6 +51,16 @@ body {
 a.active,
 a:hover {
     color: rgb(0, 171, 240);
+}
+
+#Hum{
+    position: relative;
+    right: 10%;
+}
+#Cross{
+    position: relative;
+    right: 10%;
+    display: none;
 }
 
 /* Right<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
@@ -309,31 +317,56 @@ hr {
 @media screen and (max-width: 1000px) {
     .left {
         left: unset;
-        height: 8vh;
+        background-color: rgb(17, 17, 17,0.5);
+        height:auto;
         width: 100vw;
         padding: 0;
         z-index: 2;
     }
+    .left h1{
+        visibility: hidden;
+    }
     
-
-
+    
     .Navbar {
         width: 100vw;
     }
-
-    .Navbar ul {
+    
+    .NavContainer {
+        position: relative;
+        right: 100%;
+        height: 4vh;
         margin: 0px;
+        transition: 1s ease-in;
+        overflow: hidden;
     }
-
-    .Navbar ul li {
-        display: none;
+    
+    .appear{
+        height: 30vh;
+        right: 0;
+    }
+    .NavContainer li {
         margin: 15px 0px;
-
     }
-
     .NItem {
         height: 1vh;
         font-size: 1rem;
+    }
+    #Hum{
+        margin: 15px;
+        position: fixed;
+        font-size: 1.5rem;
+        right:0;
+        top: 0;
+        display: block;
+    }
+  
+    #Cross{
+        margin: 15px;
+        position: fixed;
+        font-size: 1.8rem;
+        top: 0;
+        right:0;
     }
     .right{
         position: fixed;

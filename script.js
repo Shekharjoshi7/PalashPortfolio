@@ -14,6 +14,20 @@ const liCertificate = document.getElementById('liCertificate')
 const liContact = document.getElementById('liContact')
 const touch = document.getElementById('touch')
 
+const Hum = document.getElementById('Hum')
+const Cross = document.getElementById('Cross')
+const NavBox =document.querySelector('#NavBox')
+
+Hum.addEventListener('click',()=>{
+    NavBox.classList.add('appear')
+    Hum.style.display='none';
+    Cross.style.display='block';
+})
+Cross.addEventListener('click',()=>{
+    NavBox.classList.remove('appear')
+    Hum.style.display='block';
+    Cross.style.display='none';
+})
 
 
 const navlink = document.querySelectorAll('.NItem')
