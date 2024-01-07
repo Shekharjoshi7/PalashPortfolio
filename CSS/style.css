@@ -447,7 +447,7 @@ hr {
         margin: 25px 0px;
     }
     .IntBox{
-        height: 40vh;
+        height: 42vh;
     }
     .Interest {
         padding: 15px 0px;
@@ -464,10 +464,11 @@ hr {
     }
     .grid {
         width: 90vw;
+        height: 100%;
         grid-template-columns:90vw;
     }
     .Cards {
-        height:38vh;
+        height:40vh;
     }
     
     .img {
